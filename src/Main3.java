@@ -21,5 +21,6 @@ public class Main3 {
         }while(guess!=randomNum);
 
         System.out.println("You guessed it right  yayy");
+        sc.close();
     }
 }

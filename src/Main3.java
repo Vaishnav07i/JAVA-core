@@ -16,11 +16,19 @@ public class Main3 {
             System.out.println("Enter a guess:");
             guess=sc.nextInt();
             attempts++;
-            System.out.println("OHH NO try again");
+            if(guess==randomNum) {
+                System.out.println("You guessed it right  yayy");
+            }
+
+            else{
+                    System.out.println("OHH NO try again");
+                }
+
+
 
         }while(guess!=randomNum);
 
-        System.out.println("You guessed it right  yayy");
+
         sc.close();
     }
 }

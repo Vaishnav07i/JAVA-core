@@ -4,9 +4,9 @@ public class Main4 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter a Number");
-        int num=sc.nextInt();
-        if(num>=1 && num<=7){
-            switch (num){
+        int num1=sc.nextInt();
+        if(num1>=1 && num1<=7){
+            switch (num1){
                 case 1:
                     System.out.println("Monday");
                     break;

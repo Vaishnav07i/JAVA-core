@@ -3,30 +3,40 @@ import java.util.Scanner;
 public class Main4 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter marks:");
-        int marks=sc.nextInt();
-        if(marks>=0 && marks<=100) {
-            if (marks > 90) {
-                System.out.println("A");
-            } else if (marks > 80) {
-                System.out.println("B");
-
-            } else if (marks > 70) {
-                System.out.println("C");
-
-            } else if (marks > 60) {
-                System.out.println("D");
-
-            } else if (marks > 50) {
-                System.out.println("E");
-
-            } else {
-                System.out.println("F");
+        System.out.println("enter a Number");
+        int num=sc.nextInt();
+        if(num>=1 && num<=7){
+            switch (num){
+                case 1:
+                    System.out.println("Monday");
+                    break;
+                case 2:
+                    System.out.println("Tuesday");
+                    break;
+                case 3:
+                    System.out.println("Wednesday");
+                    break;
+                case 4:
+                    System.out.println("Thursday");
+                    break;
+                case 5:
+                    System.out.println("Friday");
+                    break;
+                case 6:
+                    System.out.println("Saturday");
+                    break;
+                case 7:
+                    System.out.println("Sunday");
+                    break;
+                default:
+                    System.out.println("Invalid input");
             }
         }
-        else{
+        else {
             System.out.println("Invalid Input");
         }
+
+
 
 
         sc.close();
